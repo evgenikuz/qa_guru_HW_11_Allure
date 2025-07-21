@@ -41,6 +41,7 @@ public class StepsTest {
 
     @Test
     public void testAnnotatedSteps() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps steps = new WebSteps();
 
         steps.openMainPage();
